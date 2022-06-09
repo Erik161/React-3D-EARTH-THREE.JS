@@ -12,12 +12,23 @@ import { TextureLoader } from "three";
 
 export function Earth(props) {
  
-  return (
+    const [colorMap, normalMap, specularMap, cloudsMap] = useLoader(TextureLoader, [EarthDayMap, EarthNormalMap, EarthSpecularMap, EarthCloudsMap])
+
+    return (
     <>
-      <ambientLight intensity={0.5}/>
+      <ambientLight intensity={1}/>
       <mesh>
-        <sphereGeometry args={[1, 32, 32]} />
-        <meshPhongMaterial color="red"/>
+        <sphereGeometry args={[1, 32, 32]}/>
+        <meshPhongMaterial specularMap={specularMap}/>
+        <meshStandardMaterial map={colorMap} normalMap={normalMap}/>
+        <OrbitControls 
+        enableZoom={true} 
+        enablePan={true} 
+        enableRotate={true} 
+        zoomSpeed={0.6} 
+        panSpeed={0.5}
+        rotateSpeed={0.4}
+        />
       </mesh>
      
     </>
