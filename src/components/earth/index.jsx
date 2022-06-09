@@ -18,6 +18,11 @@ export function Earth(props) {
     <>
       <ambientLight intensity={1}/>
       <mesh>
+        <sphereGeometry args={[1, 32,32]} />
+        <meshPhongMaterial map={cloudsMap} opacity={0.4} depthWrite={true} transparent={true} side={THREE.DoubleSide} />
+      </mesh>
+
+      <mesh>
         <sphereGeometry args={[1, 32, 32]}/>
         <meshPhongMaterial specularMap={specularMap}/>
         <meshStandardMaterial map={colorMap} normalMap={normalMap}/>
