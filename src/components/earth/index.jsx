@@ -8,7 +8,7 @@ import EarthDayMap from "../../assets/textures/8k_earth_daymap.jpg";
 import EarthNormalMap from "../../assets/textures/8k_earth_normal_map.jpg";
 import EarthSpecularMap from "../../assets/textures/8k_earth_specular_map.jpg";
 import EarthCloudsMap from "../../assets/textures/8k_earth_clouds.jpg";
-import { TextureLoader } from "three";
+import { PointLight, TextureLoader } from "three";
 
 export function Earth(props) {
  
@@ -16,7 +16,17 @@ export function Earth(props) {
 
     return (
     <>
-      <ambientLight intensity={1}/>
+      {/* <ambientLight intensity={1}/> */}
+      <pointLight color="#f6f3ea" position={[2, 0, 5]} intensity={1.2} />
+      <Stars 
+      radius={300} 
+      depth={60} 
+      count={20000} 
+      factor={7} 
+      saturation={0} 
+      fade={true}
+      />
+
       <mesh>
         <sphereGeometry args={[1.005, 32,32]} />
         <meshPhongMaterial 
@@ -30,7 +40,12 @@ export function Earth(props) {
       <mesh>
         <sphereGeometry args={[1, 32, 32]}/>
         <meshPhongMaterial specularMap={specularMap}/>
-        <meshStandardMaterial map={colorMap} normalMap={normalMap}/>
+        <meshStandardMaterial 
+        map={colorMap} 
+        normalMap={normalMap}
+        metalness={0.4}
+        roughness={0.7}
+        />
         <OrbitControls 
         enableZoom={true} 
         enablePan={true} 
