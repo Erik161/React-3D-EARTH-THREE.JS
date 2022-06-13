@@ -74,8 +74,6 @@ const MadeBy= styled.h3`
         color:#fff;
         text-decoration:none;
     }
-
-
 `;
 
 
