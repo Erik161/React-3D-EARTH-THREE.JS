@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-3D-EARTH-THREE.JS/static/css/main.f19f24cc.css",
-    "main.js": "/React-3D-EARTH-THREE.JS/static/js/main.b14fb64f.js",
+    "main.js": "/React-3D-EARTH-THREE.JS/static/js/main.afa6c4a4.js",
     "static/js/787.da3b3497.chunk.js": "/React-3D-EARTH-THREE.JS/static/js/787.da3b3497.chunk.js",
     "static/media/8k_earth_clouds.jpg": "/React-3D-EARTH-THREE.JS/static/media/8k_earth_clouds.08fcd80007fae8fc7170.jpg",
     "static/media/8k_earth_daymap.jpg": "/React-3D-EARTH-THREE.JS/static/media/8k_earth_daymap.54672c1f3ba121d80470.jpg",
@@ -9,11 +9,11 @@
     "static/media/8k_earth_normal_map.jpg": "/React-3D-EARTH-THREE.JS/static/media/8k_earth_normal_map.930cf2e99bc548140c29.jpg",
     "index.html": "/React-3D-EARTH-THREE.JS/index.html",
     "main.f19f24cc.css.map": "/React-3D-EARTH-THREE.JS/static/css/main.f19f24cc.css.map",
-    "main.b14fb64f.js.map": "/React-3D-EARTH-THREE.JS/static/js/main.b14fb64f.js.map",
+    "main.afa6c4a4.js.map": "/React-3D-EARTH-THREE.JS/static/js/main.afa6c4a4.js.map",
     "787.da3b3497.chunk.js.map": "/React-3D-EARTH-THREE.JS/static/js/787.da3b3497.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f19f24cc.css",
-    "static/js/main.b14fb64f.js"
+    "static/js/main.afa6c4a4.js"
   ]
 }
