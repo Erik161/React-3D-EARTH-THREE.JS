@@ -69,7 +69,13 @@ const MadeBy= styled.h3`
     bottom:5px;
     left:50%;
     transform:translateX(-50%);
-    text-decoration:none;
+
+    & a, a:visited, a:hover, a:active{
+        color:#fff;
+        text-decoration:none;
+    }
+
+
 `;
 
 
